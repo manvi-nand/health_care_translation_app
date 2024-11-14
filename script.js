@@ -42,7 +42,7 @@ startButton.addEventListener('click', () => {
 // DeepL API for Translation
 async function translateText(text) {
   const targetLang = languageSelect.value.toUpperCase(); // Get selected language
-  const apiKey = 'a3ca00f8-8584-4b3f-b11f-97b56821698b:fx';  // Replace with your actual DeepL API Key
+  const apiKey = 'your-api';  // Replace with your actual DeepL API Key
 
   try {
     const response = await fetch(`https://api-free.deepl.com/v2/translate?auth_key=${apiKey}&text=${encodeURIComponent(text)}&target_lang=${targetLang}`, {
